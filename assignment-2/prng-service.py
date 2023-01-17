@@ -27,6 +27,8 @@ while True:
         prng_text_file = open("prng-service.txt", "w")
         # write the random number to the file
         prng_text_file.write(str(random_number))
+        # close the file
+        prng_text_file.close()
 
     # sleep for 100 milliseconds
     time.sleep(0.1)
