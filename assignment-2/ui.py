@@ -4,9 +4,9 @@ from os import getcwd
 
 # get random number from prng-service.txt
 def getRandomNumber():
-    # write the "go" command to the prng-service.txt file
+    # write the "run" command to the prng-service.txt file
     prng_text_file = open("prng-service.txt", "w")
-    prng_text_file.write("go")
+    prng_text_file.write("run")
     prng_text_file.close()
     # wait for the prng-service.py to write the random number to the prng-service.txt file
     while True:

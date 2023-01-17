@@ -10,7 +10,7 @@ def generatePseudoRandomNumber():
     return random_number
 
 
-# Check if prng-service-txt has the "go" command in it every 100 milliseconds
+# Check if prng-service-txt has the "run" command in it every 100 milliseconds
 while True:
     # open the prng-service.txt file
     prng_text_file = open("prng-service.txt", "r")
@@ -18,8 +18,8 @@ while True:
     prng_text_file_contents = prng_text_file.read()
     # close the file
     prng_text_file.close()
-    # check if the file contains the "go" command
-    if prng_text_file_contents == "go":
+    # check if the file contains the "run" command
+    if prng_text_file_contents == "run":
         # generate a random number
         print("Generating random number")
         random_number = generatePseudoRandomNumber()
